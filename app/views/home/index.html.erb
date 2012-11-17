@@ -1,0 +1,19 @@
+<h1>O hai!</h1>
+<div>
+  <h2>most porlific arthors</h2>
+  <% @presenter.top_authors.reverse.each do |author_count| %>
+    <p><%= Author.find(author_count[0].id).name %> - <%= author_count[1] %> post</p>
+  <% end %>
+</div>
+
+<div>
+  <h2>Longets post</h2>
+  <% for i in @presenter.longest_posts %>
+    <p>
+      <% this_post = i %>
+      <h3><%= this_post.title %></h3>
+      <div><%= this_post.body %></div>
+      <div>By: <%= this_post.author.name %></div>
+    </p>
+  <% end %>
+</div>
