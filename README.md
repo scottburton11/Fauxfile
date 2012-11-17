@@ -1,9 +1,9 @@
-FauxFile
-========
+== FauxFile
+
 A sample (and reprehensible) application that demonstrates built-in Rails profiling and benchmarking tests.
 
-Getting started
----------------
+= Getting started
+
     bundle install
     bundle exec rake db:migrate
 
@@ -15,6 +15,6 @@ Profile the test suite
 
 Then take a peek at `tmp/performance` for a gazillion files with detailed profiles.
 
-How do I read this mess?
-------------------------
+- How do I read this mess?
+
 I'm no expert. [ruby-prof.rubyforge.org](http://ruby-prof.rubyforge.org) has lots of information.
